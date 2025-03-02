@@ -18,9 +18,9 @@ body {
 
 /* LOGO EN EL MENU */
 .navbar-brand img {
-    height: 50px; 
-    width: 80%; 
-    margin-right: 10px; 
+    height: 50px; /* Ajusta la altura */
+    width: 80%; /* Mantiene la proporción */
+    margin-right: 10px; /* Espaciado con el texto */
 }
 
 /* PARA LOS MENUS DESPLEGABLES */
@@ -43,44 +43,44 @@ body {
 /* COLOR MENU */
 
 .navbar {
-    background-color: #3A7F26 !important; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #3A7F26 !important; /* Color de fondo del menú */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
 .navbar .navbar-brand,
 .navbar .nav-link {
-    color: black !important; 
-    font-weight: normal; 
+    color: black !important; /* Color del texto en negro */
+    font-weight: normal; /* Hace que el texto sea más legible */
 }
 
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
-    color: #3A7F26 !important; 
+    color: #3A7F26 !important; /* Color al pasar el cursor */
 }
 
 .navbar-toggler {
-    border-color: black; 
+    border-color: black; /* Color del borde del botón hamburguesa */
 }
 
 .navbar-toggler-icon {
-    filter: invert(0); 
+    filter: invert(0); /* Asegura que el icono siga visible */
 }
 
 /* Dropdown */
 .dropdown-menu {
-    background-color: #2F6620 !important; 
+    background-color: #2F6620 !important; /* Color de fondo del dropdown */
     border: none;
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
 .dropdown-item {
-    color: white !important; 
+    color: white !important; /* Color del texto de los items */
 }
 
 .dropdown-item:hover {
-    background-color: #255219 !important; 
+    background-color: #255219 !important; /* Color al pasar el cursor */
 }
 
 /* COLOR BOTON BUSCAR */
@@ -91,23 +91,24 @@ body {
 }
 
 
+
 /* ESTILOS ACORDEONES */
 .accordion-item {
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    margin-bottom: 10px; 
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin-bottom: 10px; /* Espaciado entre los elementos */
 }
 
 .accordion-button {
-    border-radius: 10px; 
+    border-radius: 10px; /* Bordes redondeados */
 }
 
 .accordion-button:not(.collapsed) {
-    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125); 
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125); /* Sombra interna cuando está expandido */
 }
 
 .accordion-body {
-    border-radius: 0 0 10px 10px; 
+    border-radius: 0 0 10px 10px; /* Bordes redondeados en la parte inferior */
 }
 
 /* ESTILOS ACORDEONES 2 */
@@ -146,7 +147,8 @@ body {
 }
 
 
-/* MENU DESPLEGABLE IZQUIERDA*/
+
+/* MENU DESPLEGABLE */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
