@@ -576,24 +576,27 @@
     <!-- FIN MENU DESPLEGABLE IZQUIERDA -->
 
 
-<!-- INICIO SECCION IMAGENES Y VIDEO -->
+    <!-- INICIO SECCION IMAGENES Y VIDEO -->
     <div class="multimedia-section">
         <div class="container">
             <!-- Video a la izquierda -->
             <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/BH8azKgncwk?list=PLOvyGQVi5ZCke6lNjz40tySyvtBWIRFs2" 
+                <iframe src="https://www.youtube.com/embed/BH8azKgncwk?list=PLOvyGQVi5ZCke6lNjz40tySyvtBWIRFs2"
                     title="YouTube video player" frameborder="0" allowfullscreen></iframe>
             </div>
-        
+
             <!-- Imágenes a la derecha -->
             <div class="image-container">
-                <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/camino-a-la-acreditacion-institucional.html">
+                <a
+                    href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/camino-a-la-acreditacion-institucional.html">
                     <img src="./IMG/MEDIO1.jpg" alt="Imagen 1 no disponible">
                 </a>
-                <a href="https://www.uniamazonia.edu.co/Inicio/index.php/la-universidad/transparencia-y-acceso-a-informacion-publica.html">
+                <a
+                    href="https://www.uniamazonia.edu.co/Inicio/index.php/la-universidad/transparencia-y-acceso-a-informacion-publica.html">
                     <img src="./IMG/MEDIO2.png" alt="Imagen 2 no disponible">
                 </a>
-                <a href="https://www.uniamazonia.edu.co/documentos/docs/Rectoria/Plan%20de%20desarrollo%202020%20-%202029/PDI%202020%20-2029.pdf">
+                <a
+                    href="https://www.uniamazonia.edu.co/documentos/docs/Rectoria/Plan%20de%20desarrollo%202020%20-%202029/PDI%202020%20-2029.pdf">
                     <img src="./IMG/MEDIO3.jpg" alt="Imagen 3 no disponible">
                 </a>
                 <a href="https://drive.google.com/drive/u/0/folders/1-s_xYdeAbW2a1cvdLBFCL7UI84inRiBl">
@@ -602,9 +605,9 @@
             </div>
         </div>
     </div>
-    
 
-<!-- FIN INICIO SECCION IMAGENES Y VIDEO -->
+
+    <!-- FIN INICIO SECCION IMAGENES Y VIDEO -->
 
 
     <!-- INICIA FOOTER -->
@@ -790,12 +793,72 @@
             <a href="https://www.tiktok.com/@uniamazonia"><img src="./IMG/TIKTOK.png"
                     alt="TikTok"><span>TikTok</span></a>
         </div>
+
+        <div class="info-footer">
+            <p>Copyright &copy; 2022 uniamazonia.edu.co. Todos los derechos reservados. | <a
+                    href="https://www.uniamazonia.edu.co/inicio/index.php/politica-de-privacidad.html">Política de
+                    Privacidad</a></p>
+            <p>Sede Porvenir Calle 17 Diagonal 17 con Carrera 3F - Barrio Porvenir</p>
+            <p>Atención Público: Lunes a Viernes de 7:30 a.m. a 11:30 m. y 1:30 p.m. a 5:30 p.m.</p>
+            <p>Contacto: <a
+                    href="https://www.uniamazonia.edu.co/inicio/index.php/politica-de-privacidad.html">atencionalciudadano@uniamazonia.edu.co</a>
+            </p>
+            <p>Contenidos web: <a
+                    href="https://www.uniamazonia.edu.co/inicio/index.php/politica-de-privacidad.html">webmaster@uniamazonia.edu.co</a>
+            </p>
+            <p>Notificaciones judiciales: <a
+                    href="https://www.uniamazonia.edu.co/inicio/index.php/politica-de-privacidad.html">njudiciales@uniamazonia.edu.co</a>
+            </p>
+            <p><strong>Vigilada Ministerio de Educación</strong></p>
+            <p>Florencia, Caquetá, Colombia, Suramérica</p>
+            <p>Fecha creación: 05 | Marzo | 2025</p>
+
+        </div>
     </footer>
 
     <!-- FINALIZA FOOTER -->
 
     <!-- SCRIP -->
     <script src="/ClaseBootstrap/JS/bootstrap.bundle.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var dropdowns = document.querySelectorAll(".dropdown-submenu .dropdown-toggle");
+
+            dropdowns.forEach(function (dropdown) {
+                dropdown.addEventListener("click", function (e) {
+                    e.stopPropagation();
+                    let submenu = this.nextElementSibling;
+
+
+                    document.querySelectorAll(".dropdown-submenu .dropdown-menu").forEach(function (menu) {
+                        if (menu !== submenu) {
+                            menu.classList.remove("show");
+                        }
+                    });
+
+
+                    submenu.classList.toggle("show");
+                });
+            });
+
+
+            document.addEventListener("click", function () {
+                document.querySelectorAll(".dropdown-submenu .dropdown-menu").forEach(function (menu) {
+                    menu.classList.remove("show");
+                });
+            });
+
+
+            document.querySelectorAll(".dropdown-item").forEach(function (item) {
+                item.addEventListener("click", function () {
+                    document.querySelectorAll(".dropdown-menu").forEach(function (menu) {
+                        menu.classList.remove("show");
+                    });
+                });
+            });
+        });
+    </script>
 
 </body>
 

@@ -133,6 +133,23 @@ body {
     /* Color al pasar el cursor */
 }
 
+/* ESTILOS PARA EÑ SCRIPT */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-left: 0;
+    display: none;
+    position: absolute;
+}
+
+.dropdown-submenu:hover .dropdown-menu {
+    display: block;
+}
+
 
 /* --------------------------------------------------------------------------------------------------------------------------------- */
 /* ESTILOS ACORDEONES */
@@ -450,6 +467,39 @@ ul li a:hover {
     vertical-align: middle;
     margin-right: 5px;
 }
+
+/* FOOTER FINAL */
+
+.info-footer {
+    background-color: #F8F7F7;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #347323; 
+}
+
+.info-footer p {
+    margin: 5px 0;
+}
+
+.info-footer a {
+    color: #347323;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.info-footer a:hover {
+    text-decoration: underline;
+    color: #D63528;
+}
+
+.info-footer strong {
+    font-size: 16px;
+    color: #D63528; 
+}
+
+
 
 /* ------------------------------------------------------------------------------------- */
 /* RESPONSIVE */
